@@ -37,7 +37,9 @@ async function typeWords() {
           key: `${words[i].split("")[j]}`,
         })
       );
-      console.log(words[i].split("")[j]);
+      await sleep(800).then(() => {
+        console.log(words[i].split("")[j]);
+      });
     }
     document.getElementsByClassName("lb-button")[1].dispatchEvent(enter);
     await sleep(1000).then(() => {
@@ -47,7 +49,9 @@ async function typeWords() {
             key: `${words[1].split("")[j]}`,
           })
         );
-        console.log(words[1].split("")[j]);
+        sleep(800).then(() => {
+          console.log(words[1].split("")[j]);
+        });
       }
       document.getElementsByClassName("lb-button")[1].dispatchEvent(enter);
     });
