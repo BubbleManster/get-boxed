@@ -42,7 +42,7 @@ async function typeWords() {
       });
     }
     document.getElementsByClassName("lb-button")[1].dispatchEvent(enter);
-    await sleep(1000).then(() => {
+    await sleep(5000).then(() => {
       for (let j = 1; j < words[1].split("").length; j++) {
         window.dispatchEvent(
           new KeyboardEvent("keydown", {
